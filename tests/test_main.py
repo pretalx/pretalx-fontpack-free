@@ -4,7 +4,7 @@ from pretalx.common.fonts import get_fonts
 
 
 def test_plugin_importable():
-    import pretalx_fontpack_free  # noqa: F401
+    import pretalx_fontpack_free  # noqa: F401, PLC0415
 
 
 @pytest.mark.django_db
