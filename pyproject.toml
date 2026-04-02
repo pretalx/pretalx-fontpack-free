@@ -6,10 +6,10 @@ readme = "README.rst"
 license = {text = "Apache Software License"}
 keywords = ["pretalx"]
 authors = [
-  {name = "Tobias Kunze", email = "t@kunze.me"},
+  {name = "Tobias Kunze", email = "r@rixx.de"},
 ]
 maintainers = [
-  {name = "Tobias Kunze", email = "t@kunze.me"},
+  {name = "Tobias Kunze", email = "r@rixx.de"},
 ]
 
 requires-python = ">=3.11"
