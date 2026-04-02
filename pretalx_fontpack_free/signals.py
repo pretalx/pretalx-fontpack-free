@@ -5,7 +5,7 @@ from pretalx.common.signals import register_fonts
 BP = "pretalx_fontpack_free"
 
 
-def _font(subsets, variants):
+def font(subsets, variants):
     result = {}
     for variant_key, weight_id in variants:
         entry = {}
@@ -16,8 +16,8 @@ def _font(subsets, variants):
     return result
 
 
-def _font_4(subsets):
-    return _font(
+def font_full(subsets):
+    return font(
         subsets,
         [
             ("regular", "regular"),
@@ -28,15 +28,17 @@ def _font_4(subsets):
     )
 
 
-def _font_2(subsets):
-    return _font(subsets, [("regular", "regular"), ("bold", "700")])
+def font_upright(subsets):
+    return font(subsets, [("regular", "regular"), ("bold", "700")])
 
 
 @receiver(register_fonts, dispatch_uid="fontpack_free_fonts")
 def fontpack_free(sender, **kwargs):
     return {
         "Noto Sans": {
-            **_font_4("noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext"),
+            **font_full(
+                "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext"
+            ),
             "sample": (
                 "\u0421\u044a\u0435\u0448\u044c \u0436\u0435 \u0435\u0449\u0451"
                 " \u044d\u0442\u0438\u0445 \u043c\u044f\u0433\u043a\u0438\u0445"
@@ -51,25 +53,45 @@ def fontpack_free(sender, **kwargs):
             ),
         },
         "Noto Sans Japanese": {
-            **_font_2("noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese"),
-            "italic": _font_2("noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese")["regular"],
-            "bolditalic": _font_2("noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese")["bold"],
+            **font_upright(
+                "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese"
+            ),
+            "italic": font_upright(
+                "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese"
+            )["regular"],
+            "bolditalic": font_upright(
+                "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese"
+            )["bold"],
             "sample": "\u3042\u306a\u305f\u306b\u4f1a\u3048\u3066\u5149\u6804\u3067\u3059\u3002",
         },
         "Noto Sans Traditional Chinese": {
-            **_font_2("noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese"),
-            "italic": _font_2("noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese")["regular"],
-            "bolditalic": _font_2("noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese")["bold"],
+            **font_upright(
+                "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese"
+            ),
+            "italic": font_upright(
+                "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese"
+            )["regular"],
+            "bolditalic": font_upright(
+                "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese"
+            )["bold"],
             "sample": "\u6211\u771f\u6b61\u559c\u4f6e\u4f60\u719f\u4f3c",
         },
         "Noto Sans Simplified Chinese": {
-            **_font_2("noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese"),
-            "italic": _font_2("noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese")["regular"],
-            "bolditalic": _font_2("noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese")["bold"],
+            **font_upright(
+                "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese"
+            ),
+            "italic": font_upright(
+                "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese"
+            )["regular"],
+            "bolditalic": font_upright(
+                "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese"
+            )["bold"],
             "sample": "\u771f\u662f\u96be\u4ee5\u7f6e\u4fe1\uff01",
         },
         "Open Sans": {
-            **_font_4("open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext"),
+            **font_full(
+                "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext"
+            ),
             "sample": (
                 "\u0421\u044a\u0435\u0448\u044c \u0436\u0435 \u0435\u0449\u0451"
                 " \u044d\u0442\u0438\u0445 \u043c\u044f\u0433\u043a\u0438\u0445"
@@ -83,10 +105,10 @@ def fontpack_free(sender, **kwargs):
                 " \u03ba\u03c5\u03bd\u03cc\u03c2"
             ),
         },
-        "Roboto": _font_4("roboto-v51-cyrillic_latin_latin-ext"),
-        "Roboto Condensed": _font_4("roboto-condensed-v31-cyrillic_latin_latin-ext"),
+        "Roboto": font_full("roboto-v51-cyrillic_latin_latin-ext"),
+        "Roboto Condensed": font_full("roboto-condensed-v31-cyrillic_latin_latin-ext"),
         "Noto Serif": {
-            **_font_4("noto-serif-v33-cyrillic_latin_latin-ext"),
+            **font_full("noto-serif-v33-cyrillic_latin_latin-ext"),
             "sample": (
                 "\u0421\u044a\u0435\u0448\u044c \u0436\u0435 \u0435\u0449\u0451"
                 " \u044d\u0442\u0438\u0445 \u043c\u044f\u0433\u043a\u0438\u0445"
@@ -95,28 +117,32 @@ def fontpack_free(sender, **kwargs):
                 " \u0447\u0430\u044e."
             ),
         },
-        "Fira Sans": _font_4("fira-sans-v18-cyrillic_latin_latin-ext"),
-        "Lato": _font_4("lato-v25-latin_latin-ext"),
-        "Oswald": _font_2("oswald-v57-cyrillic_latin_latin-ext"),
-        "Montserrat": _font_4("montserrat-v31-cyrillic_latin_latin-ext"),
-        "Vollkorn": _font_4("vollkorn-v30-latin_latin-ext"),
-        "Poppins": _font_4("poppins-v24-latin_latin-ext"),
+        "Fira Sans": font_full("fira-sans-v18-cyrillic_latin_latin-ext"),
+        "Lato": font_full("lato-v25-latin_latin-ext"),
+        "Oswald": font_upright("oswald-v57-cyrillic_latin_latin-ext"),
+        "Montserrat": font_full("montserrat-v31-cyrillic_latin_latin-ext"),
+        "Vollkorn": font_full("vollkorn-v30-latin_latin-ext"),
+        "Poppins": font_full("poppins-v24-latin_latin-ext"),
         "Almarai": {
-            **_font("almarai-v19-arabic", [("regular", "regular"), ("bold", "800")]),
+            **font("almarai-v19-arabic", [("regular", "regular"), ("bold", "800")]),
             "sample": "\u0646\u0635 \u062d\u0643\u064a\u0645 \u0644\u0647 \u0633\u0631 \u0642\u0627\u0637\u0639 \u0648\u0630\u0648 \u0634\u0623\u0646 \u0639\u0638\u064a\u0645 \u0645\u0643\u062a\u0648\u0628 \u0639\u0644\u0649 \u062b\u0648\u0628 \u0623\u062e\u0636\u0631 \u0648\u0645\u063a\u0644\u0641 \u0628\u062c\u0644\u062f \u0623\u0632\u0631\u0642",
         },
-        "Ubuntu": _font_4("ubuntu-v21-cyrillic_latin_latin-ext"),
-        "Space Mono": _font_4("space-mono-v17-latin_latin-ext"),
+        "Ubuntu": font_full("ubuntu-v21-cyrillic_latin_latin-ext"),
+        "Space Mono": font_full("space-mono-v17-latin_latin-ext"),
         "Tajawal": {
-            **_font_2("tajawal-v12-arabic_latin"),
-            "italic": _font_2("tajawal-v12-arabic_latin")["regular"],
-            "bolditalic": _font_2("tajawal-v12-arabic_latin")["bold"],
+            **font_upright("tajawal-v12-arabic_latin"),
+            "italic": font_upright("tajawal-v12-arabic_latin")["regular"],
+            "bolditalic": font_upright("tajawal-v12-arabic_latin")["bold"],
             "sample": "\u0646\u0635 \u062d\u0643\u064a\u0645 \u0644\u0647 \u0633\u0631 \u0642\u0627\u0637\u0639 \u0648\u0630\u0648 \u0634\u0623\u0646 \u0639\u0638\u064a\u0645 \u0645\u0643\u062a\u0648\u0628 \u0639\u0644\u0649 \u062b\u0648\u0628 \u0623\u062e\u0636\u0631 \u0648\u0645\u063a\u0644\u0641 \u0628\u062c\u0644\u062f \u0623\u0632\u0631\u0642",
         },
         "Baloo Bhaijaan 2": {
-            **_font_2("baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese"),
-            "italic": _font_2("baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese")["regular"],
-            "bolditalic": _font_2("baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese")["bold"],
+            **font_upright("baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese"),
+            "italic": font_upright(
+                "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese"
+            )["regular"],
+            "bolditalic": font_upright(
+                "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese"
+            )["bold"],
             "sample": (
                 "Do b\u1ea1ch kim r\u1ea5t qu\u00fd n\u00ean s\u1ebd d\u00f9ng"
                 " \u0111\u1ec3 l\u1eafp v\u00f4 x\u01b0\u01a1ng<br>"
@@ -128,7 +154,9 @@ def fontpack_free(sender, **kwargs):
             ),
         },
         "Source Sans 3": {
-            **_font_4("source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext"),
+            **font_full(
+                "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext"
+            ),
             "sample": (
                 "\u0421\u044a\u0435\u0448\u044c \u0436\u0435 \u0435\u0449\u0451"
                 " \u044d\u0442\u0438\u0445 \u043c\u044f\u0433\u043a\u0438\u0445"
@@ -143,7 +171,9 @@ def fontpack_free(sender, **kwargs):
             ),
         },
         "Inter": {
-            **_font_4("inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext"),
+            **font_full(
+                "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext"
+            ),
             "sample": (
                 "\u0421\u044a\u0435\u0448\u044c \u0436\u0435 \u0435\u0449\u0451"
                 " \u044d\u0442\u0438\u0445 \u043c\u044f\u0433\u043a\u0438\u0445"
@@ -158,7 +188,7 @@ def fontpack_free(sender, **kwargs):
             ),
         },
         "Merriweather": {
-            **_font_4("merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext"),
+            **font_full("merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext"),
             "sample": (
                 "\u0421\u044a\u0435\u0448\u044c \u0436\u0435 \u0435\u0449\u0451"
                 " \u044d\u0442\u0438\u0445 \u043c\u044f\u0433\u043a\u0438\u0445"
@@ -168,32 +198,43 @@ def fontpack_free(sender, **kwargs):
             ),
         },
         "Noto Sans Korean": {
-            **_font_2("noto-sans-kr-v39-korean_latin_latin-ext"),
-            "italic": _font_2("noto-sans-kr-v39-korean_latin_latin-ext")["regular"],
-            "bolditalic": _font_2("noto-sans-kr-v39-korean_latin_latin-ext")["bold"],
+            **font_upright("noto-sans-kr-v39-korean_latin_latin-ext"),
+            "italic": font_upright("noto-sans-kr-v39-korean_latin_latin-ext")[
+                "regular"
+            ],
+            "bolditalic": font_upright("noto-sans-kr-v39-korean_latin_latin-ext")[
+                "bold"
+            ],
             "sample": "\ub2f9\uc2e0\uc744 \ub9cc\ub098\uc11c \uc601\uad11\uc785\ub2c8\ub2e4.",
         },
         "Noto Sans Devanagari": {
-            **_font_2("noto-sans-devanagari-v30-devanagari_latin_latin-ext"),
-            "italic": _font_2("noto-sans-devanagari-v30-devanagari_latin_latin-ext")["regular"],
-            "bolditalic": _font_2("noto-sans-devanagari-v30-devanagari_latin_latin-ext")["bold"],
+            **font_upright("noto-sans-devanagari-v30-devanagari_latin_latin-ext"),
+            "italic": font_upright(
+                "noto-sans-devanagari-v30-devanagari_latin_latin-ext"
+            )["regular"],
+            "bolditalic": font_upright(
+                "noto-sans-devanagari-v30-devanagari_latin_latin-ext"
+            )["bold"],
             "sample": "\u0906\u092a\u0938\u0947 \u092e\u093f\u0932\u0915\u0930 \u092c\u0939\u0941\u0924 \u0916\u0941\u0936\u0940 \u0939\u0941\u0908\u0964",
         },
         "Noto Sans Hebrew": {
-            **_font_2("noto-sans-hebrew-v50-hebrew_latin_latin-ext"),
-            "italic": _font_2("noto-sans-hebrew-v50-hebrew_latin_latin-ext")["regular"],
-            "bolditalic": _font_2("noto-sans-hebrew-v50-hebrew_latin_latin-ext")["bold"],
+            **font_upright("noto-sans-hebrew-v50-hebrew_latin_latin-ext"),
+            "italic": font_upright("noto-sans-hebrew-v50-hebrew_latin_latin-ext")[
+                "regular"
+            ],
+            "bolditalic": font_upright("noto-sans-hebrew-v50-hebrew_latin_latin-ext")[
+                "bold"
+            ],
             "sample": "\u05e0\u05e2\u05d9\u05dd \u05dc\u05d4\u05db\u05d9\u05e8 \u05d0\u05d5\u05ea\u05da.",
         },
-        "Raleway": _font_4("raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext"),
+        "Raleway": font_full("raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext"),
         "Libre Baskerville": {
-            **_font(
+            **font(
                 "libre-baskerville-v24-latin_latin-ext",
                 [("regular", "regular"), ("bold", "700"), ("italic", "italic")],
             ),
-            "bolditalic": _font(
-                "libre-baskerville-v24-latin_latin-ext",
-                [("bold", "700")],
+            "bolditalic": font(
+                "libre-baskerville-v24-latin_latin-ext", [("bold", "700")]
             )["bold"],
         },
     }

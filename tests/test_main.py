@@ -31,8 +31,6 @@ def test_all_fonts_have_regular_variant(event):
 def test_fonts_with_samples(event):
     fonts = get_fonts(event)
 
-    fonts_with_samples = {
-        name for name, data in fonts.items() if "sample" in data
-    }
+    fonts_with_samples = {name for name, data in fonts.items() if "sample" in data}
     assert "Noto Sans" in fonts_with_samples
     assert "Almarai" in fonts_with_samples
