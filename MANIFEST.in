@@ -1,0 +1,6 @@
+recursive-include pretalx_fontpack_free/static *
+recursive-include pretalx_fontpack_free/templates *
+exclude pretalx_fontpack_free/locale/django.pot
+recursive-include pretalx_fontpack_free/locale *
+recursive-include pretalx_fontpack_free *.py
+include justfile
