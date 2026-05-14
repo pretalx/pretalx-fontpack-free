@@ -4,6 +4,7 @@ import pytest
 from django.core import management
 from django_scopes import scopes_disabled
 
+from pretalx.event.domain.event import initialise_event
 from pretalx.event.models import Event, Organiser, Team
 from pretalx.person.models import User
 
@@ -43,7 +44,11 @@ def event(organiser):
             date_to=today + dt.timedelta(days=3),
             organiser=organiser,
         )
-        event.enable_plugin("pretalx_fontpack_free")
+        initialise_event(event)
+        # In production this plugin is loaded as a core module, so organisers
+        # never enable it themselves; mirror that here by setting the field
+        # directly rather than going through the plugin domain API.
+        event.plugins = "pretalx_fontpack_free"
         event.save()
         for team in organiser.teams.all():
             team.limit_events.add(event)
