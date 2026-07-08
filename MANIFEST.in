@@ -4,3 +4,4 @@ exclude pretalx_fontpack_free/locale/django.pot
 recursive-include pretalx_fontpack_free/locale *
 recursive-include pretalx_fontpack_free *.py
 include justfile
+include uv.lock
