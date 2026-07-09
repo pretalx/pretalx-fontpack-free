@@ -1,10 +1,6 @@
 pretalx Fontpack Free
 ==========================
 
-.. image:: https://raw.githubusercontent.com/pretalx/pretalx-fontpack-free/python-coverage-comment-action-data/badge.svg
-   :target: https://htmlpreview.github.io/?https://github.com/pretalx/pretalx-fontpack-free/blob/python-coverage-comment-action-data/htmlcov/index.html
-   :alt: Coverage
-
 This is a plugin for `pretalx`_.
 A collection of free fonts for pretalx
 
