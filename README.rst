@@ -31,6 +31,14 @@ are:
 ``just test``
     Run the full test suite with pytest.
 
+Updating the fonts
+~~~~~~~~~~~~~~~~~~
+
+To update fonts or add new ones, edit the ``FONTS`` variable in
+``scripts/update_fonts.py``, then run::
+
+    uv run scripts/update_fonts.py
+
 Installing pretalx
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -61,3 +69,4 @@ Released under the terms of the Apache License 2.0
 .. _pretalx development setup: https://docs.pretalx.org/en/latest/developer/setup.html
 .. _just: https://just.systems/
 .. _uv: https://docs.astral.sh/uv/
+.. _google-webfonts-helper: https://gwfh.mranftl.com/fonts

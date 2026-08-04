@@ -1,4 +1,5 @@
 import pytest
+from django.contrib.staticfiles import finders
 
 from pretalx.common.fonts import get_fonts
 
@@ -25,6 +26,16 @@ def test_all_fonts_have_regular_variant(event):
         assert "regular" in data, f"{name} is missing regular variant"
         for fmt in ("truetype", "woff2"):
             assert fmt in data["regular"], f"{name} regular is missing {fmt}"
+
+
+@pytest.mark.django_db
+def test_all_font_files_exist(event):
+    for name, data in get_fonts(event).items():
+        for variant, formats in data.items():
+            if not isinstance(formats, dict):
+                continue
+            for fmt, path in formats.items():
+                assert finders.find(path), f"{name} {variant} {fmt}: {path} is missing"
 
 
 @pytest.mark.django_db

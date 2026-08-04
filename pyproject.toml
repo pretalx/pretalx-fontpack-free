@@ -45,7 +45,7 @@ version = {attr = "pretalx_fontpack_free.__version__"}
 include = ["pretalx*"]
 
 [tool.check-manifest]
-ignore = [".*", "tests/*", "justfile"]
+ignore = [".*", "tests/*", "justfile", "scripts/*"]
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "pretalx.common.settings.test_settings"
@@ -96,6 +96,11 @@ ignore = [
 allowed-confusables = ["–", "'", "×"]
 
 [tool.ruff.lint.per-file-ignores]
+"scripts/**.py" = [
+  "INP001",  # Scripts don't need __init__.py
+  "RUF001",  # Font samples are deliberately multilingual
+  "T201",    # Scripts print their progress
+]
 "tests/**.py" = [
   "DTZ",     # TODO: do not use naive datetimes in tests
   "INP001",  # Tests don't need __init__.py

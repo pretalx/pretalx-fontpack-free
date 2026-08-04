@@ -1,0 +1,591 @@
+{
+  "Noto Sans": {
+    "regular": {
+      "truetype": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.ttf",
+      "woff": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.woff",
+      "woff2": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.ttf",
+      "woff": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.woff",
+      "woff2": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.ttf",
+      "woff": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.woff",
+      "woff2": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.ttf",
+      "woff": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.woff",
+      "woff2": "noto-sans-v42-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.woff2"
+    },
+    "sample": "Съешь же ещё этих мягких французских булок да выпей чаю.<br>Ταχίστη αλώπηξ βαφής ψημένη γη, δρασκελίζει υπέρ νωθρού κυνός"
+  },
+  "Noto Sans Japanese": {
+    "regular": {
+      "truetype": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-regular.ttf",
+      "woff": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-regular.woff",
+      "woff2": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-regular.woff2"
+    },
+    "bold": {
+      "truetype": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-700.ttf",
+      "woff": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-700.woff",
+      "woff2": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-700.woff2"
+    },
+    "italic": {
+      "truetype": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-regular.ttf",
+      "woff": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-regular.woff",
+      "woff2": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-regular.woff2"
+    },
+    "bolditalic": {
+      "truetype": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-700.ttf",
+      "woff": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-700.woff",
+      "woff2": "noto-sans-jp-v56-cyrillic_japanese_latin_latin-ext_vietnamese-700.woff2"
+    },
+    "sample": "あなたに会えて光栄です。"
+  },
+  "Noto Sans Traditional Chinese": {
+    "regular": {
+      "truetype": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-regular.ttf",
+      "woff": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-regular.woff",
+      "woff2": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-regular.woff2"
+    },
+    "bold": {
+      "truetype": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-700.ttf",
+      "woff": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-700.woff",
+      "woff2": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-700.woff2"
+    },
+    "italic": {
+      "truetype": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-regular.ttf",
+      "woff": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-regular.woff",
+      "woff2": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-regular.woff2"
+    },
+    "bolditalic": {
+      "truetype": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-700.ttf",
+      "woff": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-700.woff",
+      "woff2": "noto-sans-tc-v39-chinese-traditional_cyrillic_latin_latin-ext_vietnamese-700.woff2"
+    },
+    "sample": "我真歡喜佮你熟似"
+  },
+  "Noto Sans Simplified Chinese": {
+    "regular": {
+      "truetype": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-regular.ttf",
+      "woff": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-regular.woff",
+      "woff2": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-regular.woff2"
+    },
+    "bold": {
+      "truetype": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-700.ttf",
+      "woff": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-700.woff",
+      "woff2": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-700.woff2"
+    },
+    "italic": {
+      "truetype": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-regular.ttf",
+      "woff": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-regular.woff",
+      "woff2": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-regular.woff2"
+    },
+    "bolditalic": {
+      "truetype": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-700.ttf",
+      "woff": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-700.woff",
+      "woff2": "noto-sans-sc-v40-chinese-simplified_cyrillic_latin_latin-ext_vietnamese-700.woff2"
+    },
+    "sample": "真是难以置信！"
+  },
+  "Open Sans": {
+    "regular": {
+      "truetype": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.ttf",
+      "woff": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.woff",
+      "woff2": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.ttf",
+      "woff": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.woff",
+      "woff2": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.ttf",
+      "woff": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.woff",
+      "woff2": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.ttf",
+      "woff": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.woff",
+      "woff2": "open-sans-v44-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.woff2"
+    },
+    "sample": "Съешь же ещё этих мягких французских булок да выпей чаю.<br>Ταχίστη αλώπηξ βαφής ψημένη γη, δρασκελίζει υπέρ νωθρού κυνός"
+  },
+  "Roboto": {
+    "regular": {
+      "truetype": "roboto-v51-cyrillic_latin_latin-ext-regular.ttf",
+      "woff": "roboto-v51-cyrillic_latin_latin-ext-regular.woff",
+      "woff2": "roboto-v51-cyrillic_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "roboto-v51-cyrillic_latin_latin-ext-700.ttf",
+      "woff": "roboto-v51-cyrillic_latin_latin-ext-700.woff",
+      "woff2": "roboto-v51-cyrillic_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "roboto-v51-cyrillic_latin_latin-ext-italic.ttf",
+      "woff": "roboto-v51-cyrillic_latin_latin-ext-italic.woff",
+      "woff2": "roboto-v51-cyrillic_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "roboto-v51-cyrillic_latin_latin-ext-700italic.ttf",
+      "woff": "roboto-v51-cyrillic_latin_latin-ext-700italic.woff",
+      "woff2": "roboto-v51-cyrillic_latin_latin-ext-700italic.woff2"
+    }
+  },
+  "Roboto Condensed": {
+    "regular": {
+      "truetype": "roboto-condensed-v31-cyrillic_latin_latin-ext-regular.ttf",
+      "woff": "roboto-condensed-v31-cyrillic_latin_latin-ext-regular.woff",
+      "woff2": "roboto-condensed-v31-cyrillic_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "roboto-condensed-v31-cyrillic_latin_latin-ext-700.ttf",
+      "woff": "roboto-condensed-v31-cyrillic_latin_latin-ext-700.woff",
+      "woff2": "roboto-condensed-v31-cyrillic_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "roboto-condensed-v31-cyrillic_latin_latin-ext-italic.ttf",
+      "woff": "roboto-condensed-v31-cyrillic_latin_latin-ext-italic.woff",
+      "woff2": "roboto-condensed-v31-cyrillic_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "roboto-condensed-v31-cyrillic_latin_latin-ext-700italic.ttf",
+      "woff": "roboto-condensed-v31-cyrillic_latin_latin-ext-700italic.woff",
+      "woff2": "roboto-condensed-v31-cyrillic_latin_latin-ext-700italic.woff2"
+    }
+  },
+  "Noto Serif": {
+    "regular": {
+      "truetype": "noto-serif-v33-cyrillic_latin_latin-ext-regular.ttf",
+      "woff": "noto-serif-v33-cyrillic_latin_latin-ext-regular.woff",
+      "woff2": "noto-serif-v33-cyrillic_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "noto-serif-v33-cyrillic_latin_latin-ext-700.ttf",
+      "woff": "noto-serif-v33-cyrillic_latin_latin-ext-700.woff",
+      "woff2": "noto-serif-v33-cyrillic_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "noto-serif-v33-cyrillic_latin_latin-ext-italic.ttf",
+      "woff": "noto-serif-v33-cyrillic_latin_latin-ext-italic.woff",
+      "woff2": "noto-serif-v33-cyrillic_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "noto-serif-v33-cyrillic_latin_latin-ext-700italic.ttf",
+      "woff": "noto-serif-v33-cyrillic_latin_latin-ext-700italic.woff",
+      "woff2": "noto-serif-v33-cyrillic_latin_latin-ext-700italic.woff2"
+    },
+    "sample": "Съешь же ещё этих мягких французских булок да выпей чаю."
+  },
+  "Fira Sans": {
+    "regular": {
+      "truetype": "fira-sans-v18-cyrillic_latin_latin-ext-regular.ttf",
+      "woff": "fira-sans-v18-cyrillic_latin_latin-ext-regular.woff",
+      "woff2": "fira-sans-v18-cyrillic_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "fira-sans-v18-cyrillic_latin_latin-ext-700.ttf",
+      "woff": "fira-sans-v18-cyrillic_latin_latin-ext-700.woff",
+      "woff2": "fira-sans-v18-cyrillic_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "fira-sans-v18-cyrillic_latin_latin-ext-italic.ttf",
+      "woff": "fira-sans-v18-cyrillic_latin_latin-ext-italic.woff",
+      "woff2": "fira-sans-v18-cyrillic_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "fira-sans-v18-cyrillic_latin_latin-ext-700italic.ttf",
+      "woff": "fira-sans-v18-cyrillic_latin_latin-ext-700italic.woff",
+      "woff2": "fira-sans-v18-cyrillic_latin_latin-ext-700italic.woff2"
+    }
+  },
+  "Lato": {
+    "regular": {
+      "truetype": "lato-v25-latin_latin-ext-regular.ttf",
+      "woff": "lato-v25-latin_latin-ext-regular.woff",
+      "woff2": "lato-v25-latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "lato-v25-latin_latin-ext-700.ttf",
+      "woff": "lato-v25-latin_latin-ext-700.woff",
+      "woff2": "lato-v25-latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "lato-v25-latin_latin-ext-italic.ttf",
+      "woff": "lato-v25-latin_latin-ext-italic.woff",
+      "woff2": "lato-v25-latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "lato-v25-latin_latin-ext-700italic.ttf",
+      "woff": "lato-v25-latin_latin-ext-700italic.woff",
+      "woff2": "lato-v25-latin_latin-ext-700italic.woff2"
+    }
+  },
+  "Oswald": {
+    "regular": {
+      "truetype": "oswald-v57-cyrillic_latin_latin-ext-regular.ttf",
+      "woff": "oswald-v57-cyrillic_latin_latin-ext-regular.woff",
+      "woff2": "oswald-v57-cyrillic_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "oswald-v57-cyrillic_latin_latin-ext-700.ttf",
+      "woff": "oswald-v57-cyrillic_latin_latin-ext-700.woff",
+      "woff2": "oswald-v57-cyrillic_latin_latin-ext-700.woff2"
+    }
+  },
+  "Montserrat": {
+    "regular": {
+      "truetype": "montserrat-v31-cyrillic_latin_latin-ext-regular.ttf",
+      "woff": "montserrat-v31-cyrillic_latin_latin-ext-regular.woff",
+      "woff2": "montserrat-v31-cyrillic_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "montserrat-v31-cyrillic_latin_latin-ext-700.ttf",
+      "woff": "montserrat-v31-cyrillic_latin_latin-ext-700.woff",
+      "woff2": "montserrat-v31-cyrillic_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "montserrat-v31-cyrillic_latin_latin-ext-italic.ttf",
+      "woff": "montserrat-v31-cyrillic_latin_latin-ext-italic.woff",
+      "woff2": "montserrat-v31-cyrillic_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "montserrat-v31-cyrillic_latin_latin-ext-700italic.ttf",
+      "woff": "montserrat-v31-cyrillic_latin_latin-ext-700italic.woff",
+      "woff2": "montserrat-v31-cyrillic_latin_latin-ext-700italic.woff2"
+    }
+  },
+  "Vollkorn": {
+    "regular": {
+      "truetype": "vollkorn-v30-latin_latin-ext-regular.ttf",
+      "woff": "vollkorn-v30-latin_latin-ext-regular.woff",
+      "woff2": "vollkorn-v30-latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "vollkorn-v30-latin_latin-ext-700.ttf",
+      "woff": "vollkorn-v30-latin_latin-ext-700.woff",
+      "woff2": "vollkorn-v30-latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "vollkorn-v30-latin_latin-ext-italic.ttf",
+      "woff": "vollkorn-v30-latin_latin-ext-italic.woff",
+      "woff2": "vollkorn-v30-latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "vollkorn-v30-latin_latin-ext-700italic.ttf",
+      "woff": "vollkorn-v30-latin_latin-ext-700italic.woff",
+      "woff2": "vollkorn-v30-latin_latin-ext-700italic.woff2"
+    }
+  },
+  "Poppins": {
+    "regular": {
+      "truetype": "poppins-v24-latin_latin-ext-regular.ttf",
+      "woff": "poppins-v24-latin_latin-ext-regular.woff",
+      "woff2": "poppins-v24-latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "poppins-v24-latin_latin-ext-700.ttf",
+      "woff": "poppins-v24-latin_latin-ext-700.woff",
+      "woff2": "poppins-v24-latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "poppins-v24-latin_latin-ext-italic.ttf",
+      "woff": "poppins-v24-latin_latin-ext-italic.woff",
+      "woff2": "poppins-v24-latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "poppins-v24-latin_latin-ext-700italic.ttf",
+      "woff": "poppins-v24-latin_latin-ext-700italic.woff",
+      "woff2": "poppins-v24-latin_latin-ext-700italic.woff2"
+    }
+  },
+  "Almarai": {
+    "regular": {
+      "truetype": "almarai-v19-arabic-regular.ttf",
+      "woff": "almarai-v19-arabic-regular.woff",
+      "woff2": "almarai-v19-arabic-regular.woff2"
+    },
+    "bold": {
+      "truetype": "almarai-v19-arabic-800.ttf",
+      "woff": "almarai-v19-arabic-800.woff",
+      "woff2": "almarai-v19-arabic-800.woff2"
+    },
+    "sample": "نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق"
+  },
+  "Ubuntu": {
+    "regular": {
+      "truetype": "ubuntu-v21-cyrillic_latin_latin-ext-regular.ttf",
+      "woff": "ubuntu-v21-cyrillic_latin_latin-ext-regular.woff",
+      "woff2": "ubuntu-v21-cyrillic_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "ubuntu-v21-cyrillic_latin_latin-ext-700.ttf",
+      "woff": "ubuntu-v21-cyrillic_latin_latin-ext-700.woff",
+      "woff2": "ubuntu-v21-cyrillic_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "ubuntu-v21-cyrillic_latin_latin-ext-italic.ttf",
+      "woff": "ubuntu-v21-cyrillic_latin_latin-ext-italic.woff",
+      "woff2": "ubuntu-v21-cyrillic_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "ubuntu-v21-cyrillic_latin_latin-ext-700italic.ttf",
+      "woff": "ubuntu-v21-cyrillic_latin_latin-ext-700italic.woff",
+      "woff2": "ubuntu-v21-cyrillic_latin_latin-ext-700italic.woff2"
+    }
+  },
+  "Space Mono": {
+    "regular": {
+      "truetype": "space-mono-v17-latin_latin-ext-regular.ttf",
+      "woff": "space-mono-v17-latin_latin-ext-regular.woff",
+      "woff2": "space-mono-v17-latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "space-mono-v17-latin_latin-ext-700.ttf",
+      "woff": "space-mono-v17-latin_latin-ext-700.woff",
+      "woff2": "space-mono-v17-latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "space-mono-v17-latin_latin-ext-italic.ttf",
+      "woff": "space-mono-v17-latin_latin-ext-italic.woff",
+      "woff2": "space-mono-v17-latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "space-mono-v17-latin_latin-ext-700italic.ttf",
+      "woff": "space-mono-v17-latin_latin-ext-700italic.woff",
+      "woff2": "space-mono-v17-latin_latin-ext-700italic.woff2"
+    }
+  },
+  "Tajawal": {
+    "regular": {
+      "truetype": "tajawal-v12-arabic_latin-regular.ttf",
+      "woff": "tajawal-v12-arabic_latin-regular.woff",
+      "woff2": "tajawal-v12-arabic_latin-regular.woff2"
+    },
+    "bold": {
+      "truetype": "tajawal-v12-arabic_latin-700.ttf",
+      "woff": "tajawal-v12-arabic_latin-700.woff",
+      "woff2": "tajawal-v12-arabic_latin-700.woff2"
+    },
+    "italic": {
+      "truetype": "tajawal-v12-arabic_latin-regular.ttf",
+      "woff": "tajawal-v12-arabic_latin-regular.woff",
+      "woff2": "tajawal-v12-arabic_latin-regular.woff2"
+    },
+    "bolditalic": {
+      "truetype": "tajawal-v12-arabic_latin-700.ttf",
+      "woff": "tajawal-v12-arabic_latin-700.woff",
+      "woff2": "tajawal-v12-arabic_latin-700.woff2"
+    },
+    "sample": "نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق"
+  },
+  "Baloo Bhaijaan 2": {
+    "regular": {
+      "truetype": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-regular.ttf",
+      "woff": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-regular.woff",
+      "woff2": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-regular.woff2"
+    },
+    "bold": {
+      "truetype": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-700.ttf",
+      "woff": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-700.woff",
+      "woff2": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-700.woff2"
+    },
+    "italic": {
+      "truetype": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-regular.ttf",
+      "woff": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-regular.woff",
+      "woff2": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-regular.woff2"
+    },
+    "bolditalic": {
+      "truetype": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-700.ttf",
+      "woff": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-700.woff",
+      "woff2": "baloo-bhaijaan-2-v21-arabic_latin_latin-ext_vietnamese-700.woff2"
+    },
+    "sample": "Do bạch kim rất quý nên sẽ dùng để lắp vô xương<br>نص حكيم له سر قاطع وذو شأن عظيم مكتوب على ثوب أخضر ومغلف بجلد أزرق"
+  },
+  "Source Sans 3": {
+    "regular": {
+      "truetype": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.ttf",
+      "woff": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.woff",
+      "woff2": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.ttf",
+      "woff": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.woff",
+      "woff2": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.ttf",
+      "woff": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.woff",
+      "woff2": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.ttf",
+      "woff": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.woff",
+      "woff2": "source-sans-3-v19-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.woff2"
+    },
+    "sample": "Съешь же ещё этих мягких французских булок да выпей чаю.<br>Ταχίστη αλώπηξ βαφής ψημένη γη, δρασκελίζει υπέρ νωθρού κυνός"
+  },
+  "Inter": {
+    "regular": {
+      "truetype": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.ttf",
+      "woff": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.woff",
+      "woff2": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.ttf",
+      "woff": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.woff",
+      "woff2": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.ttf",
+      "woff": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.woff",
+      "woff2": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.ttf",
+      "woff": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.woff",
+      "woff2": "inter-v20-cyrillic_cyrillic-ext_greek_greek-ext_latin_latin-ext-700italic.woff2"
+    },
+    "sample": "Съешь же ещё этих мягких французских булок да выпей чаю.<br>Ταχίστη αλώπηξ βαφής ψημένη γη, δρασκελίζει υπέρ νωθρού κυνός"
+  },
+  "Merriweather": {
+    "regular": {
+      "truetype": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-regular.ttf",
+      "woff": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff",
+      "woff2": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-700.ttf",
+      "woff": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-700.woff",
+      "woff2": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-italic.ttf",
+      "woff": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-italic.woff",
+      "woff2": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-700italic.ttf",
+      "woff": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-700italic.woff",
+      "woff2": "merriweather-v33-cyrillic_cyrillic-ext_latin_latin-ext-700italic.woff2"
+    },
+    "sample": "Съешь же ещё этих мягких французских булок да выпей чаю."
+  },
+  "Noto Sans Korean": {
+    "regular": {
+      "truetype": "noto-sans-kr-v39-korean_latin_latin-ext-regular.ttf",
+      "woff": "noto-sans-kr-v39-korean_latin_latin-ext-regular.woff",
+      "woff2": "noto-sans-kr-v39-korean_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "noto-sans-kr-v39-korean_latin_latin-ext-700.ttf",
+      "woff": "noto-sans-kr-v39-korean_latin_latin-ext-700.woff",
+      "woff2": "noto-sans-kr-v39-korean_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "noto-sans-kr-v39-korean_latin_latin-ext-regular.ttf",
+      "woff": "noto-sans-kr-v39-korean_latin_latin-ext-regular.woff",
+      "woff2": "noto-sans-kr-v39-korean_latin_latin-ext-regular.woff2"
+    },
+    "bolditalic": {
+      "truetype": "noto-sans-kr-v39-korean_latin_latin-ext-700.ttf",
+      "woff": "noto-sans-kr-v39-korean_latin_latin-ext-700.woff",
+      "woff2": "noto-sans-kr-v39-korean_latin_latin-ext-700.woff2"
+    },
+    "sample": "당신을 만나서 영광입니다."
+  },
+  "Noto Sans Devanagari": {
+    "regular": {
+      "truetype": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-regular.ttf",
+      "woff": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-regular.woff",
+      "woff2": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-700.ttf",
+      "woff": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-700.woff",
+      "woff2": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-regular.ttf",
+      "woff": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-regular.woff",
+      "woff2": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-regular.woff2"
+    },
+    "bolditalic": {
+      "truetype": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-700.ttf",
+      "woff": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-700.woff",
+      "woff2": "noto-sans-devanagari-v30-devanagari_latin_latin-ext-700.woff2"
+    },
+    "sample": "आपसे मिलकर बहुत खुशी हुई।"
+  },
+  "Noto Sans Hebrew": {
+    "regular": {
+      "truetype": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-regular.ttf",
+      "woff": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-regular.woff",
+      "woff2": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-700.ttf",
+      "woff": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-700.woff",
+      "woff2": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-regular.ttf",
+      "woff": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-regular.woff",
+      "woff2": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-regular.woff2"
+    },
+    "bolditalic": {
+      "truetype": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-700.ttf",
+      "woff": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-700.woff",
+      "woff2": "noto-sans-hebrew-v50-hebrew_latin_latin-ext-700.woff2"
+    },
+    "sample": "נעים להכיר אותך."
+  },
+  "Raleway": {
+    "regular": {
+      "truetype": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-regular.ttf",
+      "woff": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff",
+      "woff2": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-700.ttf",
+      "woff": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-700.woff",
+      "woff2": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-italic.ttf",
+      "woff": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-italic.woff",
+      "woff2": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-700italic.ttf",
+      "woff": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-700italic.woff",
+      "woff2": "raleway-v37-cyrillic_cyrillic-ext_latin_latin-ext-700italic.woff2"
+    }
+  },
+  "Libre Baskerville": {
+    "regular": {
+      "truetype": "libre-baskerville-v24-latin_latin-ext-regular.ttf",
+      "woff": "libre-baskerville-v24-latin_latin-ext-regular.woff",
+      "woff2": "libre-baskerville-v24-latin_latin-ext-regular.woff2"
+    },
+    "bold": {
+      "truetype": "libre-baskerville-v24-latin_latin-ext-700.ttf",
+      "woff": "libre-baskerville-v24-latin_latin-ext-700.woff",
+      "woff2": "libre-baskerville-v24-latin_latin-ext-700.woff2"
+    },
+    "italic": {
+      "truetype": "libre-baskerville-v24-latin_latin-ext-italic.ttf",
+      "woff": "libre-baskerville-v24-latin_latin-ext-italic.woff",
+      "woff2": "libre-baskerville-v24-latin_latin-ext-italic.woff2"
+    },
+    "bolditalic": {
+      "truetype": "libre-baskerville-v24-latin_latin-ext-700.ttf",
+      "woff": "libre-baskerville-v24-latin_latin-ext-700.woff",
+      "woff2": "libre-baskerville-v24-latin_latin-ext-700.woff2"
+    }
+  }
+}
