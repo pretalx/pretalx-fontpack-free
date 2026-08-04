@@ -1,7 +1,7 @@
 #!/usr/bin/env -S uv run --script
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["requests"]
+# dependencies = ["requests", "tqdm"]
 # ///
 import argparse
 import io
@@ -12,8 +12,10 @@ from pathlib import Path
 from typing import NamedTuple
 
 import requests
+from tqdm import tqdm
 
 API = "https://gwfh.mranftl.com/api/fonts"
+CHUNK_SIZE = 64 * 1024
 TIMEOUT = 60
 
 PACKAGE_DIR = Path(__file__).resolve().parent.parent / "pretalx_fontpack_free"
@@ -260,7 +262,7 @@ def entry_files(entry):
 
 
 def download(font, files):
-    response = requests.get(
+    with requests.get(
         f"{API}/{font.id}",
         params={
             "download": "zip",
@@ -269,10 +271,22 @@ def download(font, files):
             "formats": ",".join(FORMATS.values()),
         },
         timeout=TIMEOUT,
-    )
-    response.raise_for_status()
+        stream=True,
+    ) as response:
+        response.raise_for_status()
+        archive_data = io.BytesIO()
+        # The CJK archives run to tens of megabytes, so show bytes as they arrive.
+        with tqdm(
+            total=int(response.headers.get("content-length", 0)) or None,
+            unit="B",
+            unit_scale=True,
+            leave=False,
+        ) as progress:
+            for chunk in response.iter_content(chunk_size=CHUNK_SIZE):
+                archive_data.write(chunk)
+                progress.update(len(chunk))
 
-    with zipfile.ZipFile(io.BytesIO(response.content)) as archive:
+    with zipfile.ZipFile(archive_data) as archive:
         missing = files - set(archive.namelist())
         if missing:
             raise ValueError(f"{font.name}: download is missing {sorted(missing)}")
@@ -282,15 +296,19 @@ def download(font, files):
 
 def update_fonts(*, keep_old=False):
     catalog = {}
-    for font in FONTS:
-        entry = build_entry(font, fetch_metadata(font))
-        files = entry_files(entry)
-        if all((FONT_DIR / name).exists() for name in files):
-            print(f"{font.name}: up to date")
-        else:
-            print(f"{font.name}: downloading {len(files)} files")
-            download(font, files)
-        catalog[font.name] = entry
+    up_to_date = 0
+    with tqdm(FONTS, unit="font") as progress:
+        for font in progress:
+            progress.set_description(font.name)
+            entry = build_entry(font, fetch_metadata(font))
+            files = entry_files(entry)
+            if all((FONT_DIR / name).exists() for name in files):
+                up_to_date += 1
+            else:
+                tqdm.write(f"{font.name}: downloading {len(files)} files")
+                download(font, files)
+            catalog[font.name] = entry
+    print(f"{len(FONTS)} fonts, {up_to_date} already up to date")
 
     CATALOG_PATH.write_text(
         json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
